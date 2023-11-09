@@ -55,6 +55,8 @@ h2 {
     display: inline-flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
+    font-family: Anton, sans-serif;
 }
 
 .green-circle {
@@ -69,6 +71,8 @@ h2 {
     display: inline-flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
+    font-family: Anton, sans-serif;
 }
 
 .aqua-circle {
@@ -83,13 +87,69 @@ h2 {
     display: inline-flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
+    font-family: Anton, sans-serif;
 }
 
 .row {
-    /*width: 50%;*/
+    width: 100%;
     padding: 20px;
     display: flex;
     justify-content: space-evenly;
+}
+.letter-d-red  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    background-color: #E6563B;
+}
+.letter-d-orange  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    background-color: #EB9D3A;
+}
+.letter-s  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    background-color: #7CB06C;
+}
+.letter-h  {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 35px;
+    height: 35px;
+    text-align: center;
+    background-color: #00ABA9;
+}
+.small-icon-circle {
+    display: flex;
+    justify-content: flex-end;
+}
+#featured-project {
+    display: flex;
+    justify-content: left;
 
-
+}
+#selected-work {
+    padding: 3em 0;
+}
+.apple-ipad {
+    display: flex;
+    justify-content: center;
 }
