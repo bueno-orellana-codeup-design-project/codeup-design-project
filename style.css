@@ -16,3 +16,80 @@ body {
 html {
     background-color: #F0F0F0;
 }
+
+h1 {
+    font-size: 50px;
+    font-family: Anton, sans-serif;
+}
+
+h2 {
+    font-size: 30px;
+    font-family: Anton, sans-serif;
+}
+
+.red-circle {
+    border-radius: 100px;
+    background: #E6563B;
+    color: white;
+    width: 95px;
+    height: 95px;
+    border-style: solid;
+    border-color: white;
+    border-width: 10px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: Anton, sans-serif;
+}
+
+.orange-circle {
+    border-radius: 100px;
+    background-color: #EB9D3A;
+    color: white;
+    width: 95px;
+    height: 95px;
+    border-style: solid;
+    border-color: white;
+    border-width: 10px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.green-circle {
+    border-radius: 100px;
+    background-color: #7CB06C;
+    color: white;
+    width: 95px;
+    height: 95px;
+    border-style: solid;
+    border-color: white;
+    border-width: 10px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aqua-circle {
+    border-radius: 100px;
+    background-color: #00ABA9;
+    color: white;
+    width: 95px;
+    height: 95px;
+    border-style: solid;
+    border-color: white;
+    border-width: 10px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.row {
+    /*width: 50%;*/
+    padding: 20px;
+    display: flex;
+    justify-content: space-evenly;
+
+
+}
