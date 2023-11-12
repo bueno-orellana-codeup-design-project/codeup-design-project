@@ -1,155 +1,349 @@
-.logo {
-    width: 40px;
-}
-h5 {
-    margin-right: 50px;
-}
-#title {
-    margin-top: 30px;
+@import url('https://fonts.googleapis.com/css?family=Abel|Anton&display=swap');
+* {
+    box-sizing: border-box;
 }
 body {
-    background-color: #F0F0F0;
+    margin: 0;
+    background: #F0F0F0;
 }
-#subtitle {
-    margin-top: 30px;
+h1, h2, h3, h4, h5 {
+    font-family: "Anton", sans-serif;
+    text-transform: uppercase;
 }
-html {
-    background-color: #F0F0F0;
-}
-
 h1 {
-    font-size: 50px;
-    font-family: Anton, sans-serif;
+    font-size: 25px;
 }
-
 h2 {
-    font-size: 30px;
-    font-family: Anton, sans-serif;
-}
-
-.red-circle {
-    border-radius: 100px;
-    background: #E6563B;
-    color: white;
-    width: 95px;
-    height: 95px;
-    border-style: solid;
-    border-color: white;
-    border-width: 10px;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
     text-align: center;
-    font-family: Anton, sans-serif;
+    font-size: 48px;
+    margin: 30px 0;
 }
-
-.orange-circle {
-    border-radius: 100px;
-    background-color: #EB9D3A;
-    color: white;
-    width: 95px;
-    height: 95px;
-    border-style: solid;
-    border-color: white;
-    border-width: 10px;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
+h3 {
+    font-size: 40px;
     text-align: center;
-    font-family: Anton, sans-serif;
 }
-
-.green-circle {
-    border-radius: 100px;
-    background-color: #7CB06C;
-    color: white;
-    width: 95px;
-    height: 95px;
-    border-style: solid;
-    border-color: white;
-    border-width: 10px;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    font-family: Anton, sans-serif;
+h4 {
+    font-size: 32px;
 }
-
-.aqua-circle {
-    border-radius: 100px;
-    background-color: #00ABA9;
-    color: white;
-    width: 95px;
-    height: 95px;
-    border-style: solid;
-    border-color: white;
-    border-width: 10px;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    font-family: Anton, sans-serif;
+h5 {
+    font-size: 28px;
 }
-
-.row {
+p {
+    font-family: "Abel", sans-serif;
+}
+.wrapper {
+    display: grid;
+    grid-template-areas:
+            "nav"
+            "header"
+            "main"
+            "aside";
     width: 100%;
-    padding: 20px;
-    display: flex;
-    justify-content: space-evenly;
+    padding: .8em;
+    max-width: 992px;
+    margin: 0 auto;
 }
-.letter-d-red  {
+header {
+    grid-area: header;
+}
+nav {
+    grid-area: nav;
+}
+main {
+    grid-area: main;
+}
+aside {
+    grid-area: aside;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    width: 35px;
-    height: 35px;
-    text-align: center;
-    background-color: #E6563B;
 }
-.letter-d-orange  {
+.logo-title {
+    font-size: 25px;
+    text-transform: lowercase;
+    margin-right: 10px;
+}
+.logo-item {
+    flex-basis: 100%;
+}
+nav a {
+    color: black;
+    font-family: "Abel", sans-serif;
+    text-decoration: none;
+}
+nav li {
+    z-index: 1;
+}
+.navbar:not(.logo) {
+    text-transform: uppercase;
+    font-size: 15px;
+}
+nav li:not(.logo-item) {
+    margin: 1em .5em;
+}
+.logo-item a {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 2.5em;
+}
+.nav-background {
+    position: absolute;
+    height: 60px;
+    background: white;
+    top: 40px;
+    width: 100%;
+    left: 0;
+}
+.large-service-circles {
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    width: 35px;
-    height: 35px;
+}
+.large-service-circle {
+    height: 105px;
+    width: 105px;
+    background: grey;
+    color: white;
+    display: flex;
+    border-radius: 53px;
+    border: .3em solid white;
+    margin: 1%;
+}
+.large-service-circle>* {
+    margin: auto;
+    font-size: 1.3em;
+}
+hr {
+    display: none;
+}
+.red {
+    background: #e6563b;
+}
+.yellow {
+    background: #EB9D3A;
+}
+.green {
+    background: #7cb06c;
+}
+.blue {
+    background: #00aba9
+}
+.small-title {
+    text-transform: uppercase;
+}
+main article img {
+    width: 100%;
+}
+main>section {
+    display: grid;
+    grid-row-gap: 2em;
+}
+main>section>.small-title,
+aside>.small-title {
     text-align: center;
-    background-color: #EB9D3A;
+    margin-top: 5em;
 }
-.letter-s  {
+.design-card section {
     display: flex;
-    justify-content: center;
     align-items: center;
-    border-radius: 50%;
-    width: 35px;
-    height: 35px;
-    text-align: center;
-    background-color: #7CB06C;
+    justify-content: flex-start;
+    justify-items: flex-start;
 }
-.letter-h  {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    width: 35px;
-    height: 35px;
-    text-align: center;
-    background-color: #00ABA9;
+.design-card section>* {
+    flex-grow: 0;
 }
-.small-icon-circle {
-    display: flex;
-    justify-content: flex-end;
+.design-card section p {
+    margin-right: auto;
 }
-#featured-project {
+.small-service-circle {
+    width: 18px;
+    height: 18px;
+    border-radius: 9px;
+    font-size: .4em;
+    font-family: "Anton", sans-serif;
+    font-weight: bold;
     display: flex;
-    justify-content: left;
+    margin: .2em;
+}
+.small-service-circle>* {
+    margin: auto;
+}
+aside article  {
+    display: flex;
+    align-items: flex-start;
+}
+.card-image {
+    width: 100%;
+    height: 60vw;
+    background-size: cover;
+    background-position: center;
+    border: .5em solid grey;
+    border-radius: .25em;
+}
+.card-image-1 {
+    background-image: url("../img/apple-ipad.jpg");
+}
+.card-image-2 {
+    background-image: url("../img/macbook.jpg");
+}
+.card-image-3 {
+    background-image: url("../img/man.jpg");
+}
+.card-image-4 {
+    background-image: url("../img/security.jpg");
+}
+.ad-image {
+    height: 20vw;
+    width: 20vw;
+    background-size: cover;
+    background-position: center;
+    flex-shrink: 0;
+    margin-right: 1em;
+}
+aside article h4 {
+    margin-top: 0;
+}
+.ad-image-1 {
+    background-image: url("../img/mobile-phone.jpg");
+}
+.ad-image-2 {
+    background-image: url("../img/head.jpg");
+}
+.ad-image-3 {
+    background-image: url("../img/ipad.jpg");
+}
+.icon {
+    color: #1AA1F3;
+    font-size: 1.5em;
+    position: relative;
+    top: 6px;
+    margin-right: .3em;
+}
+@media screen and (min-width:768px) {
+
+    nav ul {
+        flex-wrap: nowrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    nav ul li:nth-of-type(2) {
+        order: -1;
+    }
+
+    nav ul li:nth-of-type(3) {
+        order: -1;
+    }
+
+    .logo-item {
+        flex-basis: auto;
+    }
+
+    nav li:not(.logo-item) {
+        position: relative;
+        bottom: 22px;
+        margin: 0 2em;
+    }
+
+    hr {
+        display: block;
+        width: 45%;
+    }
+
+    main>section {
+        grid-template-rows: repeat(3, auto);
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 2em;
+    }
+
+    main section>p {
+        grid-area: 1 / 1 / 2 /-1;
+    }
+
+    .card-image {
+        height: 30vw;
+        margin: 0;
+    }
+}
+@media screen and (min-width:992px) {
+
+    nav ul {
+        justify-content: flex-start;
+    }
+
+    nav ul li:nth-of-type(2) {
+        order: 0;
+    }
+
+    nav ul li:nth-of-type(3) {
+        order: 0;
+    }
+
+    .logo-item {
+        margin-right: auto;
+    }
+
+    .logo-item a {
+        flex-direction: row;
+    }
+
+    .logo-item a img {
+        margin-right: .5em;
+    }
+
+    nav li:not(.logo-item) {
+        top: 3px;
+        margin: 0 2em;
+    }
+
+
+    .ad-image {
+        width: 60px;
+        height: 60px;
+        border: 2px solid lightgray;
+    }
+
+    .card-image {
+        height: 200px;
+    }
+
+    main>section>.small-title, aside>.small-title {
+        text-align: left;
+    }
+
+    aside article h4 {
+        margin: 0;
+        font-size: 1.4em;
+        position: relative;
+        bottom: 5px;
+    }
+
+
+    .ads>div>* {
+        margin: 1em 0;
+    }
+
+    .wrapper {
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 2em;
+        grid-template-areas:
+                "nav nav nav"
+                "header header header"
+                "main main aside";
+    }
+
+    aside>div {
+        margin: 3em 0 2em 0;
+    }
 
 }
-#selected-work {
-    padding: 3em 0;
-}
-.apple-ipad {
-    display: flex;
-    justify-content: center;
+
+@media screen and (min-width:1200px) {
+
 }
