@@ -81,22 +81,11 @@ nav li {
     text-transform: uppercase;
     font-size: 15px;
 }
-nav li:not(.logo-item) {
-    margin: 1em .5em;
-}
 .logo-item a {
     display: flex;
     flex-direction: column;
     align-items: center;
     font-size: 2.5em;
-}
-.nav-background {
-    position: absolute;
-    height: 60px;
-    background: white;
-    top: 40px;
-    width: 100%;
-    left: 0;
 }
 .large-service-circles {
     display: flex;
@@ -200,8 +189,8 @@ aside article  {
     background-image: url("../img/security.jpg");
 }
 .ad-image {
-    height: 20vw;
-    width: 20vw;
+    height: 20em;
+    width: 20em;
     background-size: cover;
     background-position: center;
     flex-shrink: 0;
@@ -230,7 +219,7 @@ aside article h4 {
 .ads {
     display: none;
 }
-
+/*---------------Media Screen at 768px -------------*/
 @media screen and (min-width:768px) {
 
     nav ul {
@@ -239,29 +228,14 @@ aside article h4 {
         justify-content: center;
     }
 
-    nav ul li:nth-of-type(2) {
-        order: -1;
-    }
-
-    nav ul li:nth-of-type(3) {
-        order: -1;
-    }
-
     .logo-item {
         flex-basis: auto;
-    }
-
-    nav li:not(.logo-item) {
-        position: relative;
-        bottom: 22px;
-        margin: 0 2em;
     }
 
     hr {
         display: block;
         width: 80%;
         margin: 4em auto 0;
-
     }
 
     main>section {
@@ -271,16 +245,12 @@ aside article h4 {
     }
 
     main section>p {
-        grid-area: 1 / 1 / 2 /-1;
+        grid-area: 1 / 1 / 2 / 3;
     }
 
     .card-image {
         height: 30vw;
         margin: 0;
-    }
-
-    aside{
-        /*display: none;*/
     }
 
     h2 {
@@ -300,23 +270,12 @@ aside article h4 {
     .selected-work-body {
         margin: 0 4em 0 4em;
     }
-
-    .ads {
-        display: none;
-    }
 }
+/*---------------Media Screen at 992px -------------*/
 @media screen and (min-width:992px) {
 
     nav ul {
         justify-content: flex-start;
-    }
-
-    nav ul li:nth-of-type(2) {
-        order: 0;
-    }
-
-    nav ul li:nth-of-type(3) {
-        order: 0;
     }
 
     .logo-item {
@@ -330,12 +289,6 @@ aside article h4 {
     .logo-item a img {
         margin-right: .5em;
     }
-
-    nav li:not(.logo-item) {
-        top: 3px;
-        margin: 0 2em;
-    }
-
 
     .ad-image {
         width: 60px;
@@ -380,14 +333,6 @@ aside article h4 {
         text-align: center;
     }
 
-    aside p {
-        text-align: center;
-    }
-
-    aside .small-title {
-        text-align: center;
-    }
-
     .card-image {
         height: 10em;
     }
@@ -403,7 +348,7 @@ aside article h4 {
     }
 
 }
-
+/*---------------Media Screen at 1200px -------------*/
 @media screen and (min-width:1200px) {
     h3 {
         margin-top: 2em;
