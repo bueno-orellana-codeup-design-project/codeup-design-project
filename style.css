@@ -437,4 +437,10 @@ aside article h4 {
         justify-content: center;
         flex-direction: column;
     }
+
+    .small-title{
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+    }
 }
