@@ -7,12 +7,9 @@ body {
     background: #E9ECEF;
 }
 
-h1, h2, h3, h4, h5 {
+h2, h3, h4, h5 {
     font-family: "Anton", sans-serif;
     text-transform: uppercase;
-}
-h1 {
-    font-size: 25px;
 }
 h2 {
     text-align: center;
@@ -108,12 +105,12 @@ nav li:not(.logo-item) {
     margin: 1em 4em 0;
 }
 .large-service-circle {
-    height: 105px;
-    width: 105px;
+    height: 90px;
+    width: 90px;
     background: grey;
     color: white;
     display: flex;
-    border-radius: 53px;
+    border-radius: 50%;
     border: .3em solid white;
     margin: 1%;
 }
@@ -138,6 +135,8 @@ hr {
 }
 .small-title {
     text-transform: uppercase;
+    font-size: .8em;
+    margin: 1em 0;
 }
 main article img {
     width: 100%;
@@ -164,10 +163,10 @@ aside>.small-title {
     margin-right: auto;
 }
 .small-service-circle {
-    width: 18px;
-    height: 18px;
-    border-radius: 9px;
-    font-size: .4em;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    font-size: 1em;
     font-family: "Anton", sans-serif;
     font-weight: bold;
     display: flex;
